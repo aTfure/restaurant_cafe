@@ -121,3 +121,23 @@ p {
 }
 
 // lets start
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  .nav-container {
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    background: $black;
+
+    .logo, menu-icon {
+      
+      img {
+        max-width: 6rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
