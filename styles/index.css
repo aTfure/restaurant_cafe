@@ -252,4 +252,76 @@ p {
 }
 .why-us__image img {
   border-radius: 1.5rem;
+}
+
+.explore {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/bg-fixed.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
+}
+.explore__wrapper {
+  flex-direction: column;
+}
+.explore__wrapper .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.explore__wrapper .card-container .cards {
+  padding: 4rem 2rem;
+  background: #222;
+  margin: 2rem;
+  transition: all 1s ease;
+}
+.explore__wrapper .card-container .cards img {
+  max-width: 5rem;
+}
+.explore__wrapper .card-container .cards:hover {
+  transform: translate(-10px);
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .cards {
+  padding: 4rem 2rem;
+  background: #222;
+  margin: 2rem;
+  transition: all 1s ease;
+}
+.card-container .cards img {
+  max-width: 5rem;
+}
+.card-container .cards:hover {
+  transform: translate(-10px);
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.clients {
+  width: 100%;
+  background-color: #222;
+  padding: 6rem 0;
+}
+.clients__wrapper {
+  flex-direction: column;
+}
+.clients .cards {
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../images/bg-restaurant-portrait.jpg") no-repeat center;
+  background-size: cover;
+}
+.clients .cards p {
+  font-size: 2.2rem;
+  font-style: italic;
+  line-height: 2;
+}
+.clients .cards h3 {
+  padding-top: 3rem;
+}
+.clients .cards:hover {
+  background: black;
 }/*# sourceMappingURL=index.css.map */
