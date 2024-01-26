@@ -129,4 +129,38 @@ p {
 .navbar .nav-container .logo img, .navbar .nav-container menu-icon img {
   max-width: 6rem;
   cursor: pointer;
+}
+
+.menu-links {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: #000;
+  left: 100vw;
+  transition: all 1s ease;
+}
+.menu-links .close-icon {
+  position: absolute;
+  right: 6rem;
+  top: 3rem;
+  cursor: pointer;
+}
+.menu-links .menu-link-cont {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+.menu-links .menu-link-cont li {
+  text-align: center;
+  padding: 3rem;
+}
+.menu-links .menu-link-cont li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.menu-links.active {
+  left: 0;
+  z-index: 99;
 }/*# sourceMappingURL=index.css.map */

@@ -141,3 +141,41 @@ p {
     }
   }
 }
+
+.menu-links {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: $black;
+  left: 100vw;
+  transition: all 1s ease;
+
+  .close-icon {
+    position: absolute;
+    right: 6rem;
+    top: 3rem;
+    cursor: pointer;
+  }
+
+  .menu-link-cont{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+    li {
+      text-align: center;
+      padding: 3rem;
+
+      a {
+        color: $white;
+        font-weight: 700;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.menu-links.active {
+  left: 0;
+  z-index: 99;
+}
