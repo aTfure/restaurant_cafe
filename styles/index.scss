@@ -1,0 +1,123 @@
+// basic scss
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+// variables
+$black: #000;
+$grey: #222;
+$yellow: #ffd71b;
+$white: #fff;
+$fs-xl: 6.2rem;
+$fs-large: 4.2rem;
+$fs-medium: 2.6rem;
+$fs-small: 2.2rem;
+$fs-xsmall: 1.8rem;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  // we are assinging 1rem = 10px using 62.5% of 16px .. actually 1rem = 16px but we are reassinging it for ease of calculation
+  @media (max-width: 767px) {
+    font-size: 55%;
+  }
+  @media (max-width: 480px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: $fs-xsmall;
+  background-color: $black;
+  color: $white;
+  line-height: 1.5;
+}
+
+// utility classes
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding: 0 10rem;
+  @media (max-width: 767px) {
+    padding: 0 5rem;
+  }
+  @media (max-width: 767px) {
+    padding: 0 2rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.section-padding {
+  margin: 8rem 0;
+  @media (max-width: 767px) {
+    margin: 4rem 0;
+  }
+}
+
+// button style
+.theme-btn {
+  width: 100%;
+  max-width: 25rem;
+  background-color: $yellow;
+  color: $black;
+  padding: 2rem 3rem;
+  border: none;
+  outline: none;
+  font-size: $fs-small;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  transition: all 1s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: red;
+    color: $white;
+  }
+}
+
+// Typography
+
+h1 {
+  font-size: $fs-xl;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $fs-large;
+  padding-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: $fs-small;
+  font-weight: 700;
+  color: $yellow;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: $fs-medium;
+  padding: 1rem 0;
+}
+
+p {
+  font-size: $fs-xsmall;
+  font-weight: 300;
+}
+
+// lets start
