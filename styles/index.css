@@ -236,6 +236,7 @@ p {
 }
 .why-us__content {
   width: 60%;
+  padding: 1rem;
 }
 .why-us__content h3 {
   color: #ffd71b;
@@ -384,12 +385,12 @@ p {
   height: 100vh;
   background-size: cover;
   position: relative;
-  margin-top: 30rem;
+  margin-top: 20rem;
 }
 .contact-section__wrapper {
-  padding: 8rem;
+  padding: 3rem;
   background-color: #222;
-  width: 40%;
+  width: 90%;
   margin: auto;
   position: absolute;
   top: -15%;
@@ -441,4 +442,108 @@ p {
 }
 .getEmail .logo {
   max-width: 10rem;
+}
+
+footer {
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+footer .footer-menu-links li {
+  padding: 1rem;
+  text-align: center;
+}
+footer .footer-menu-links li a {
+  color: #fff;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+footer .social-icons {
+  margin: 2rem 0;
+}
+footer .social-icons img {
+  max-width: 4rem;
+  height: auto;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 1s ease;
+}
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    height: auto;
+  }
+  .hero-section__wrapper {
+    padding: 15rem 0 10rem 0;
+  }
+  .hero-section__wrapper h1 {
+    font-size: 4.2rem;
+  }
+  .why-us__wrapper {
+    flex-direction: column;
+  }
+  .why-us__content, .why-us__image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .why-us__content img, .why-us__image img {
+    max-width: 100%;
+  }
+  .explore__wrapper {
+    flex-direction: column;
+  }
+  .gallery__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10rem 10rem 15rem 10rem 10rem;
+    grid-template-areas: "i1 i1" "i1 i1" "i2 i3" "i4 i4" "i5 i6" "i7 i7";
+  }
+  .contact-section__wrapper {
+    padding: 3rem;
+    width: 90%;
+    top: -10%;
+  }
+  .card-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .navbar .nav-container {
+    padding: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section__wrapper h1 {
+    font-size: 2.6rem;
+  }
+  .why-us__wrapper {
+    flex-direction: column;
+  }
+  .why-us__image {
+    width: 100%;
+    text-align: center;
+  }
+  .explore__wrapper {
+    flex-direction: column;
+  }
+  .gallery__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30rem 30rem 30rem 30rem 30rem 30rem;
+    grid-template-areas: "i1 i1" "i2 i3" "i4 i4" "i5 i6" "i7 i7";
+  }
+  .contact-section__wrapper {
+    padding: 3rem;
+    width: 100%;
+    top: -10%;
+  }
+  .card-container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }/*# sourceMappingURL=index.css.map */
